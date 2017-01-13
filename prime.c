@@ -15,7 +15,7 @@ void main()
         }
         if(flag==0)
         {
-            printf("The immediate next prime number to %d is %d",n,i);
+            printf("The next prime number is %d",i);
             break;
         }
         flag=0;
