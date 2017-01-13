@@ -2,9 +2,8 @@
 void main()
 {
     int n,i,j,flag=0;
-    printf("Enter the number less than 100:");
     scanf("%d",&n);
-    for(i=n+1;i<=100;i++)
+    for(i=n+1;i>0;i++)
     {
         for(j=2;j<i;j++)
         {
@@ -21,5 +20,4 @@ void main()
         }
         flag=0;
     }
-    return 0;
 }
