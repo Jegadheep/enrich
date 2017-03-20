@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int a[10],n,i,t1=0,t2=0,t3=0;
+	int a[10],n,i,t1=0,t2=0;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -12,10 +12,9 @@ int main(void)
 	{
 	   if(a[i]%2==0)
 	   {
-	       t1=a[i]/2;
-	       if(t1>t2)
+	       if(a[i]>t1)
 	       {
-	           t2=t1;
+	           t1=a[i];
 	       }
 	       
 	   }
@@ -24,18 +23,17 @@ int main(void)
 	{
 	   if(a[i]%2==0)
 	   {
-	       if(a[i]/2!=t2)
+	       if(a[i]!=t1)
 	       {
-    	       t1=a[i]/2;
-    	       if(t1>t3)
-    	       {
-    	           t3=t1;
-    	       }
+    	          if(a[i]>t2)
+    	       	  {
+    	             t2=a[i];
+    	          }
 	       }
 	       
 	   }
 	}
-	printf("the second biggest number in the array is %d",t3*2);
+	printf("the second biggest number in the array is %d",t2);
 	
 	return 0;
 }
